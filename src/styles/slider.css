@@ -1,0 +1,23 @@
+.slider {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Todas las imágenes apiladas en el mismo contenedor */
+.slider img {
+  position: absolute;   /* Apilarlas unas sobre otras */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: flex;
+  opacity: 0;           /* Invisibles por defecto */
+  transition: opacity 1s ease-in-out;
+}
+
+/* Imagen activa visible */
+.slider img.active {
+  opacity: 1;
+}

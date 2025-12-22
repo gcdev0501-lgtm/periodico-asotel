@@ -1,0 +1,24 @@
+
+.editorial {
+    color: black;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-left: 4px solid #d62525;
+}
+
+.editorial h4{
+margin-bottom:0px;
+    
+}
+.editorial h3 {
+    color: #c00000;
+}
+
+.img_editorial {
+    object-fit: content;
+    width: 40%;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom:5px;
+    border-radius: 5px;
+}

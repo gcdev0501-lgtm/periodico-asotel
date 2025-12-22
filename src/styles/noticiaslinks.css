@@ -1,0 +1,31 @@
+/* ===== NOTICIAS LINKS ===== */
+
+.noticias-links {
+  margin-left: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.elheraldo {
+  margin-bottom: 12px;
+}
+
+.ingl-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ingl-heading a {
+  color: #000;
+  text-decoration: none;
+}
+
+.ingl-heading a:hover {
+  text-decoration: underline;
+}
+
+.elheraldo time {
+  font-size: 0.75rem;
+  color: #777;
+}

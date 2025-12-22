@@ -1,0 +1,27 @@
+.recomendados {
+  color: black;
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.recomendados h3 {
+  margin-bottom: 10px;
+}
+
+.recomendados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recomendados li {
+  margin-bottom: 10px;
+  font-size: 1.09rem;
+}
+
+.recomendados a {
+  color: #c62828;
+  text-decoration: none;
+  font-weight: bold;
+}

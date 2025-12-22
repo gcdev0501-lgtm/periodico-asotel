@@ -1,0 +1,139 @@
+/* ================= HEADER ================= */
+
+.header {
+  border-bottom: 2px solid #a9e098;
+}
+
+/* 🎄 Banner de Navidad arriba del Header */
+.banner-navidad-top {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.banner-navidad-top img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+
+  animation: flotarNavidad 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.64));
+}
+
+@keyframes flotarNavidad {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(6px);
+  }
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 2rem;
+  padding-bottom: 8px;
+  background-color: rgb(56, 119, 56);
+  font-size: 0.9rem;
+}
+
+.date {
+  color: white;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.search-box {
+  width: 230px;
+  margin-top: 6.5px;
+  margin-bottom: 2.5px;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+/* ================= LOGO ================= */
+
+.logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Contenedor logo + texto */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Texto ASOTEL */
+.logo-container h1 {
+  font-weight: bold;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  margin: 0;
+
+  background: linear-gradient(90deg, #0a6608, #6cbe01, #f9fd02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Logo ASOTEL */
+.logo-final {
+  height: 80px;
+  width: auto;
+  border-radius: 40px;
+}
+
+/* Bandera */
+.logo-image {
+  height: 70px;
+  width: auto;
+}
+
+/* Subtítulo */
+.tagline {
+  font-size: 1rem;
+  color: #313030;
+  margin-top: 10px;
+  letter-spacing: 3px;
+}
+
+/* ================= MENU ================= */
+
+.menu {
+    background: linear-gradient(90deg, rgb(64, 163, 64), rgb(229, 245, 7));
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  margin: 0 12px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}

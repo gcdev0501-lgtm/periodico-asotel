@@ -1,0 +1,74 @@
+
+/* Contenedor general de la encuesta */
+.encuesta-sidebar {
+  background-color: #f5f5f5; /* fondo claro como el sidebar */
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 12px; /* bordes suaves */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título */
+.encuesta-sidebar h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Pregunta */
+.encuesta-sidebar p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Opciones */
+.encuesta-sidebar label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.encuesta-sidebar label:hover {
+  color: #000;
+}
+
+/* Radios ocultos y estilizados con pseudo-elemento */
+.encuesta-sidebar input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #007bff; /* color del círculo al seleccionar */
+}
+
+/* Botón de enviar */
+.encuesta-sidebar button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #07be35;
+  color: #fff;
+  border: none; 
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.encuesta-sidebar button:hover {
+  background-color: #129b06f3;
+}
+
+/* Responsive: que se vea bien en sidebar estrecho */
+@media (max-width: 768px) {
+  .encuesta-sidebar {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .encuesta-sidebar h3 {
+    font-size: 1.1rem;
+  }
+}

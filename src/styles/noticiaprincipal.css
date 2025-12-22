@@ -1,0 +1,36 @@
+/* ===== NOTICIA PRINCIPAL ===== */
+
+.noticia-principal {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.noticia-principal h2 {
+  margin-left: 10px;
+  color: black;
+  margin-left: 20px;
+}
+
+
+.noticia-principal img {
+    width: 75%;
+    border-radius: 0px;
+    padding: left;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.noticia-principal h1 {
+  color: black;
+  font-size: 1.4rem;
+  margin: 12px;
+  margin-left: 20px;
+}
+
+.noticia-principal p {
+  margin: 0 12px 16px;
+  color: black;
+  margin-left: 20px;
+}

@@ -1,0 +1,32 @@
+.aside-junior {
+  background: #fff;
+  color: black;
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.img-victoria {
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.proxima-fecha {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.instagram-link {
+ display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ca1313;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
