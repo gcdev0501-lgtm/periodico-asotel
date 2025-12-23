@@ -25,7 +25,7 @@ const noticiasGrid = [
   },
   {
     id: "noticia4",
-    img: "/periodico-asotel/public/img-equipo-asotel.jpg",
+    img: "/periodico-asotel/img-equipo-asotel.jpg",
     titulo: "Evento cultural Asotel",
     texto:
       "Integración y cultura para nuestros asociados. El equipo de Asotel tuvo una destacada participación en el campeonato realizado en Puerto Colombia, donde demostró un desempeño futbolístico sólido, disciplinado y comprometido. A lo largo del torneo, los jugadores mostraron un alto nivel competitivo que les permitió mantenerse entre los primeros puestos, alcanzando una ubicación muy significativa en la tabla de puntuación.",
