@@ -1,7 +1,6 @@
 {
   "name": "asotel",
   "private": true,
-  "homepage": "https://gcdev0501-lgtm.github.io/periodico-asotel",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

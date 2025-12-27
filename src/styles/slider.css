@@ -1,5 +1,6 @@
 .slider {
-  width: 100%;
+  margin-left: 10px;
+  width: 98%;
   height: 350px;
   position: relative;
   overflow: hidden;
@@ -14,10 +15,10 @@
   height: 100%;
   object-fit: flex;
   opacity: 0;           /* Invisibles por defecto */
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 /* Imagen activa visible */
 .slider img.active {
-  opacity: 1;
+  opacity: 2;
 }

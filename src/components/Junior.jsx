@@ -21,7 +21,8 @@ export default function Junior() {
       <div className="proxima-fecha">
          <h4>📅 Próxima cita</h4>
         <p>Superliga BetPlay 2026: Junior vs Santa Fe</p>
-        <span>A inicios de 2026 — Fecha y hora por confirmar</span>
+        <span>A inicios de 2026 — Barranquilla  jueves 15 de enero . 
+          El partido decisivo se disputará en Bogotá el miércoles 21 de enero, en el estadio El Campín</span>
       </div>
 
       <a
