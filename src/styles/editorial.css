@@ -6,6 +6,10 @@
     border-left: 4px solid #d62525;
 }
 
+.editorial p {
+    text-align: justify;
+}
+
 .editorial h4{
 margin-bottom:0px;
     

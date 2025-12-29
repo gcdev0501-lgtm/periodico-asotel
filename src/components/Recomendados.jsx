@@ -7,9 +7,9 @@ export default function Recomendados() {
 
       <ul>
         <li>
-          <strong>Israel Adesanya vs Alex Pereira</strong>
+          <strong>Transmisiones Deportivas en Vivo</strong>
           <br />
-          <small>Domingo 27 de octubre – 8:00 PM</small>
+          <small>Accede a partidos de fútbol nacional e internacional, señal deportiva y otros eventos destacados, todo desde un mismo enlace y en tiempo real.</small>
         </li>
 
         <li>

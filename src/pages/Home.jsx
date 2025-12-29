@@ -5,6 +5,8 @@ import Slider from "../components/Slider";
 import Noticias from "../components/Noticias";
 import Sidebar from "../components/Sidebar";
 
+
+
 export default function Home() {
   return (
     <>

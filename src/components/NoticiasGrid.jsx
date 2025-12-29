@@ -1,3 +1,15 @@
+import imgFiesta1 from '../assets/imgFiesta1.jpeg';
+import imgFiesta2 from '../assets/imgFiesta2.jpeg';
+import imgFiesta3 from '../assets/imgFiesta3.jpeg';
+import imgFiesta4 from '../assets/imgFiesta4.jpeg';
+import imgFiesta5 from '../assets/imgFiesta5.jpeg';
+import imgFiesta6 from '../assets/imgFiesta6.jpeg';
+import imgFiesta7 from '../assets/imgFiesta7.jpeg';
+import imgFiesta8 from '../assets/imgFiesta8.jpeg';
+import imgFiesta9 from '../assets/imgFiesta9.jpeg';
+
+
+
 import imgMarcha from '../assets/img-marcha-1mayo.jpg';
 import imgReunion from '../assets/img-reunion-socios.jpg';
 import imgSolidaridad from '../assets/img-solidaridad-asotel.jpg';
@@ -8,7 +20,27 @@ import imgIntegracion from '../assets/img-integracion-socios.jpg';
 
 
 
+
 import "../styles/noticiasgrid.css";
+
+const noticiaEspecial = {
+  id: "fiesta-fin-ano",
+  img: imgFiesta1,
+  tipo: "especial",
+  titulo: "Ultimo gran evento de Asotel 2025",
+  texto:
+    "La fiesta de fin de año de Asotel fue un espacio de integración, alegría y reconocimiento para nuestros asociados y sus familias. Una jornada llena de música, compañerismo y momentos que fortalecen nuestra comunidad.",
+  imagenes: [
+    imgFiesta2,
+    imgFiesta3,
+    imgFiesta4,
+    imgFiesta5,
+    imgFiesta6,
+    imgFiesta7,
+    imgFiesta8,
+    imgFiesta9,
+  ],
+};
 
 const noticiasGrid = [
   {
@@ -59,6 +91,22 @@ const noticiasGrid = [
 export default function NoticiasGrid({ onSelect }) {
   return (
     <section className="articulos">
+
+      {/* 🔥 ARTÍCULO DESTACADO */}
+      <article
+        className="articulo articulo-destacado"
+        onClick={() => onSelect(noticiaEspecial)}
+      >
+        <img
+          src={noticiaEspecial.imagenes[0]}
+          alt={noticiaEspecial.titulo}
+        />
+        <h2>{noticiaEspecial.titulo}</h2>
+        <p>{noticiaEspecial.texto}</p>
+        <button className="ver-mas">Ver más</button>
+      </article>
+
+    {/* 🧱 NOTICIAS NORMALES (las 6 que ya tenías) */}
       {noticiasGrid.map((n) => (
         <article
           key={n.id}

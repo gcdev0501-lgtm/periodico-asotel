@@ -45,6 +45,23 @@
   
 }
 
+/* 🔥 Artículo especial */
+.articulo-destacado {
+  grid-column: 1 / -1; /* ocupa las 3 columnas */
+  background: #f8f9f4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.articulo-destacado img {
+  height: 300px;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
 /* Botón ver más (opcional) */
 .ver-mas {
   margin-top: auto;
@@ -76,5 +93,21 @@
   .articulo img {
     height: 200px;
     
+  }
+}
+
+/* Mobile horizontal específico */
+@media (max-width: 900px) and (orientation: landscape) {
+  .articulos {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;      /* 🔑 límite editorial */
+    margin: 0 auto;        /* centra el contenido */
+  }
+  .articulo img {
+    height: 140px;
+  }
+
+  .articulo {
+    padding: 20px;
   }
 }

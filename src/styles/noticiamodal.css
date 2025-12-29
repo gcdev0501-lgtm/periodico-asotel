@@ -55,3 +55,18 @@
 .cerrar:hover {
   background-color: #56c20e;
 }
+
+.modal-contenido img.imagen-secundaria {
+  width: auto;
+  max-width: 100%;
+  max-height: 560px;
+  object-fit: contain;   /* 🔑 ESTA ES LA CLAVE */
+  display: block;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+}
+
+.texto-extra {
+  font-size: 0.99rem;
+  
+}
