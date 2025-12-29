@@ -40,7 +40,7 @@
 }
 
 .articulo p {
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   color: black;
   
 }
@@ -62,9 +62,32 @@
   
 }
 
+.articulo-destacado .contenido-preview {
+  text-align: justify;
+  height: 60px;
+  max-height: 80px;     /* altura visible en el grid */
+  overflow: hidden;      /* oculta el resto del texto */
+  position: relative;
+  padding-right: 10px;
+}
+
+.contenido-preview p{
+  font-size: medium;
+}
+
+/* Indicador de contenido adicional */
+.articulo-destacado .contenido-preview::after {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  background-color: #f8f9f4;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
 /* Botón ver más (opcional) */
 .ver-mas {
-  margin-top: auto;
+  margin-top: 15px;
   background-color: #536154;
   color: white;
   border: none;

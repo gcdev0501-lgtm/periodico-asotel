@@ -2,12 +2,21 @@
 
 .noticias-links {
   margin-left: 15px;
-  border-bottom: 1px solid #ddd;
+  padding: 20px;
   padding-bottom: 15px;
+  border-radius: 12px;          /* bordes suaves */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.068);  /* sombra ligera */
+  margin: 15px;                 /* separación del main */
 }
 
-.elheraldo {
+.asotel {
+  margin-right: 12px;
+  margin-top: 12px;
   margin-bottom: 12px;
+  padding: 5px;
+  border: 1px solid #eee;   /* opcional: separador visual */
+  border-radius: 5px;       /* bordes suaves */
+  background-color: #c2d41e2d;
 }
 
 .ingl-heading {
@@ -23,9 +32,19 @@
 
 .ingl-heading a:hover {
   text-decoration: underline;
+  color: rgba(13, 26, 12, 0.856);
 }
 
-.elheraldo time {
-  font-size: 0.75rem;
-  color: #777;
+.asotel time {
+ display: block;           /* fuerza línea nueva */
+ font-size: 0.75rem;
+ color: #777;
+ margin-top: 2px;  
+}
+
+/* Responsive: en pantallas pequeñas se muestra en una columna */
+@media (max-width: 768px) {
+  .asotel {
+    flex: 1 1 100%;
+  }
 }

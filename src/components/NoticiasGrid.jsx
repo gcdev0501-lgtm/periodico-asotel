@@ -29,7 +29,7 @@ const noticiaEspecial = {
   tipo: "especial",
   titulo: "Ultimo gran evento de Asotel 2025",
   texto:
-    "La fiesta de fin de año de Asotel fue un espacio de integración, alegría y reconocimiento para nuestros asociados y sus familias. Una jornada llena de música, compañerismo y momentos que fortalecen nuestra comunidad.",
+    "El sábado 6 de diciembre se realizó el evento más esperado por todos los asociados. Fue el encuentro de familias, de hermanos y hermanas que festejaron, en ese gran encuentro, un final de año anticipado, con baile amenizado con conjuntos y equipo de sonido con su discjockey ya conocido y también asociado, que ya conoce la música que le gusta a todos los allí reunidos. Salimos de Barranquilla a las 9:00 a.m., siendo el punto de partida la Universidad del Atlántico. Esperaban a los asociados lujosos y cómodos buses de Brasilia. El bus que se llenaba salía enseguida; había desespero de los asociados por llegar al sitio del gran evento bailable. Y así llegaron los cinco buses que se contrataron. “¡Qué gran sitio!”, expresaron la gran mayoría de nuestros asociados al bajarse de los buses y caminar hacia el interior del gran salón, que estaba bien ordenado para la ocasión. Uno a uno se fueron acomodando y escuchaban de parte de los directivos la manera en que se desarrollarían las actividades ya programadas. Se da la bienvenida de parte de nuestro presidente y arranca la música con aplausos de nuestros asociados. En la pista de baile estaban las parejas bailadoras; igualmente, algunos asociados bailaban solos cualquier ritmo que colocaran. El tiempo fue pasando entre whisky y cervezas, hasta que llegó el gran plato, que fue un deleite al paladar culinario. ¡Qué gran evento, Asotel! ¿Y ahora qué viene? ¿Carnaval o un paseo?",
   imagenes: [
     imgFiesta2,
     imgFiesta3,
@@ -82,7 +82,7 @@ const noticiasGrid = [
   {
     id: "noticia6",
     img: imgIntegracion,
-    titulo: "Jornada de capacitación",
+    titulo: "Socios en evento hotel cartagena",
     texto:
       "Espacio formativo para asociados y familias. La jornada en las playas de Cartagena fue recibida con entusiasmo por la mayoría de los socios, quienes expresaron su alegría y satisfacción por el encuentro organizado. El ambiente de integración, acompañado del paisaje costero, permitió fortalecer lazos y compartir momentos de convivencia que enriquecieron la experiencia colectiva. Muchos asistentes manifestaron su agradecimiento a Asotel por promover este tipo de espacios recreativos, que contribuyen al bienestar, la unión y el fortalecimiento de la comunidad asociada.",
   },
@@ -102,7 +102,9 @@ export default function NoticiasGrid({ onSelect }) {
           alt={noticiaEspecial.titulo}
         />
         <h2>{noticiaEspecial.titulo}</h2>
+        <div className="contenido-preview">
         <p>{noticiaEspecial.texto}</p>
+        </div>
         <button className="ver-mas">Ver más</button>
       </article>
 

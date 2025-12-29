@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import imgLunaRio from '../assets/Luna-del-Rio_link.jpg';
 import imgPetroSeg from '../assets/img-link-petro-seguridad.webp';
 import imgIncabot from '../assets/img-incabot.jpg';
@@ -47,18 +49,34 @@ const noticiasLinks = [
 ];
 
 export default function NoticiasLinks({ onSelect }) {
+
+    const [horaActual, setHoraActual] = useState("");
+
+  useEffect(() => {
+    const actualizarHora = () => {
+      const fecha = new Date();
+      const opciones = { hour: "2-digit", minute: "2-digit" };
+      setHoraActual(fecha.toLocaleTimeString("es-CO", opciones));
+    };
+
+    actualizarHora(); // inicial
+    const intervalo = setInterval(actualizarHora, 1000);
+    return () => clearInterval(intervalo);
+  }, []);
+
   return (
     <section className="noticias-links">
       {noticiasLinks.map((n) => (
-        <div key={n.id} className="elheraldo">
+        <div key={n.id} className="asotel">
           <h3
             className="ingl-heading"
             onClick={() => onSelect(n)}
           >
             <a>{n.titulo}</a>
           </h3>
-          <time>{n.hora}</time>
-        </div>
+          <time>{horaActual}</time> {/* ahora dinámica */}
+         </div>
+    
       ))}
     </section>
   );

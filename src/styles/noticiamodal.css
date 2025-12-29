@@ -31,6 +31,10 @@
   text-align: center;
 }
 
+.modal-contenido p{
+  text-align: auto;
+}
+
 .modal-contenido img {
   width: 100%;
   height: cover; /* <-- mantiene proporción */

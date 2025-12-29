@@ -2,11 +2,14 @@
 
 .noticia-principal {
   background: #fff;
-  border-radius: 6px;
+  padding: 20px;
+  border-radius: 1px;
   overflow: hidden;
   display: grid;
   gap: 20px;
   padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* sombra ligera */
+  margin: 20px, 15px;
 }
 
 .noticia-principal h2 {
