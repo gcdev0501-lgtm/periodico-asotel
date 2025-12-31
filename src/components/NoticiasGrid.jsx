@@ -88,7 +88,11 @@ const noticiasGrid = [
   },
 ];
 
+
+
 export default function NoticiasGrid({ onSelect }) {
+
+  
   return (
     <section className="articulos">
 

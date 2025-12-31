@@ -11,11 +11,10 @@ export default function Home() {
   return (
     <>
       <main className="main-content">
-        <section className="main-article">
+         <section className="main-article">
           <Noticias />
           <Slider />
-          
-        </section>
+         </section>
 
         <aside className="sidebar">
           <Sidebar />

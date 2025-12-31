@@ -3,3 +3,17 @@
   flex-direction: column;
   gap: 20px;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    gap: 12px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    font-size: 0.95rem;
+  }
+}
