@@ -113,8 +113,7 @@ https://sweetalert2.github.io/#ajax-request`),pR(i),typeof i.title=="string"&&(i
       etc... de manera que Álvaro cuando entraba al baño explotaba en improperios contra el personal de Ericsson, por la porquería
       q encontraba en nuestros sanitarios ,esa mañana Álvaro empezó  a decirles ,"puercos "cochinos" hasta los perros cuando
       cagan tapan la mierda... no tienen costumbres, nojoda, estando Álvaro gritándoles de todo a los cachacos entraba a
-      la central un técnico de Ericsson q venía de Bogotá enchaquetado, con maleta incorporada se veía Esto es un documento
-      de incrustado con tecnología de a que venía del aeropuerto y el tipo pasa delante de nosotros y Álvaro gritándoles de todo 
+      la central un técnico de Ericsson q venía de Bogotá enchaquetado, con maleta incorporada se veía que venía del aeropuerto y el tipo pasa delante de nosotros y Álvaro gritándoles de todo 
       y el Cachaco decía con la cabeza enterrada y esa voz asolapada, que los distingue "yo acabo de llegar" yo acabo de llegar" 
       y Álvaro le dice con esa chispa q tenía,, "espero que haya cagao en su casa nojoda, porque le puse llave al baño..." el cachaco 
       hizo un gesto así como cuando el chapulín Colorao decía; y "ahora quien podrá salvarnos" se pueden imaginar la risa nuestra... al
