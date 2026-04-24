@@ -1,5 +1,10 @@
+import { Link } from "react-router-dom";
 import "../styles/junior.css";
 import ImgJunior from "../assets/img-junior-campeon.jpg";
+
+import { GrInstagram } from "react-icons/gr";
+import carnaval from '../assets/img-rancho2.jfif';
+
 
 export default function Junior() {
   return (
@@ -18,20 +23,35 @@ export default function Junior() {
         llenando de orgullo a sus aficionados y a toda la ciudad.
       </p>
 
-      <div className="proxima-fecha">
-         <h4>📅 Próxima cita</h4>
-        <p>Superliga BetPlay 2026: Junior vs Santa Fe</p>
-        <span>A inicios de 2026 — Barranquilla  jueves 15 de enero . 
-          El partido decisivo se disputará en Bogotá el miércoles 21 de enero, en el estadio El Campín</span>
-      </div>
+         <Link to="/entretenimiento" className="preview-link">
+        
+        <img
+          src={carnaval}
+          alt="Telecarnavaleando con Asotel"
+          className="img-ranch"
+        />
+          
+        <div className="preview-texto">
+          <h3>ASOTEL ES DE SOCIOS ALEGRES Y CARNAVALEROS.</h3>
+
+          <p>
+            Cada año, el espíritu carnavalero se despierta en nuestra ciudad
+            y nos reunimos para celebrar uno de los eventos más alegres
+            de nuestra asociación.
+          </p>
+           
+          <span className="leer-mas">Leer más →</span>
+        </div>
+
+      </Link>
 
       <a
-        href="https://www.instagram.com/juniorclubsa/"
+        href="https://www.instagram.com/ranchocurrambero/"
         target="_blank"
         rel="noreferrer"
         className="instagram-link"
       >
-        📸 Instagram Oficial del Junior
+        <GrInstagram /> Instagram Oficial del Rancho 
       </a>
     </section>
   );

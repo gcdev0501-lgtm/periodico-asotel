@@ -1,17 +1,17 @@
 import "../styles/masnoticias.css";
 
 // Importar imágenes desde assets
-import juanga from "../assets/Juanga-2.jpg";
+import pension from "../assets/img-mesada-pensional.webp";
 import giro from "../assets/Giro-de-Rigo.jpg";
-import thrump from "../assets/thrump_maduro.jpeg";
+import imgMaduro from "../assets/img-nicolasmaduro.webp";
 import lideres from "../assets/lideres_sociales.jpeg";
 
 const noticias = [
   {
     id: 1,
-    img: juanga,
+    img: pension,
     categoria: "SOCIEDAD",
-    texto: "Juan Gabriel, el artista que siempre pensó en la eternidad.",
+    texto: "El aumento a nuestros salarios pensionales se rige por la variación del índice de precios al consumidor (IPC).",
   },
   {
     id: 2,
@@ -21,9 +21,9 @@ const noticias = [
   },
   {
     id: 3,
-    img: thrump,
+    img: imgMaduro,
     categoria: "MUNDO",
-    texto: "Trump cuestiona una guerra con Venezuela, pero advierte que Maduro tendría los días contados.",
+    texto: "Tras un ataque militar que dejó civiles fallecidos, la vicepresidenta de Venezuela responsabiliza a Estados Unidos, mientras desconoce el paradero del presidente y la primera dama..",
   },
   {
     id: 4,

@@ -19,6 +19,7 @@
 
 .modal-contenido {
   background-color: white;
+  color:black;
   max-width: 800px;
   width: 100%;
   max-height: 90vh; /* <-- no excede 90% de la altura de la ventana */
@@ -74,3 +75,5 @@
   font-size: 0.99rem;
   
 }
+
+

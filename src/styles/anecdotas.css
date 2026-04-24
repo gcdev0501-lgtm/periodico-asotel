@@ -1,0 +1,79 @@
+.anecdotas{
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  
+    
+}
+.news-card {
+  width: 89%;
+  margin-top: 0px;
+  margin-left: 8px;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.116);
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 12px;
+
+  margin-bottom: 00px;
+
+  display: flex;
+  flex-direction: column; /* clave: autor y boton debajo del texto */
+  gap: 4px; 
+}
+
+.anecdotas h1{
+    margin-bottom: 0px;
+    color: black;
+    text-align: center;
+    
+    font-size: 27px;
+}
+
+.anecdotas p{
+    padding: 10px;
+    margin-left: 5px;
+    text-align: justify;
+    
+}
+
+.resumen {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.autor{
+    margin-top: 1px;
+    margin-left: 18px;
+     font-weight: 640;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.ver-mas {
+  
+background: none;
+  border: none;
+  color: #0077cc;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start; /* lo pone a la izquierda y debajo */
+  margin-top: 2px;
+}
+
+.ver-mas:hover {
+  text-decoration: underline;
+}
+
+
+.audio-card .autor {
+  font-weight: 640;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+/* Ajuste del reproductor de audio para ocupar todo el ancho disponible */
+.audio-card audio {
+  width: 100%;
+  outline: none;
+}

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "../styles/slider.css";
 
-// 🔹 Imágenes desde assets
-import slide1 from "../assets/slider_elcorral.jpg";
-import slide2 from "../assets/sld_subway.jpg";
+
+import slide1 from "../assets/img-slider-cooperativa.jpeg";
+import slide2 from "../assets/slider-electronic-final.png";
 import slide3 from "../assets/img-slider-ingetech.jpeg";
+
+
 
 
 export default function Slider() {

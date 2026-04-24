@@ -1,35 +1,45 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Nieve from "./components/Nieve";
+
 
 import Home from "./pages/Home";
 import MasNoticias from "./components/MasNoticias";
+import Entretenimiento from "./components/Entretenimiento";
 import Contacto from "./components/Contacto";
-import BannerNavidad from "./components/BannerNavidad";
+
+import CarnivalEffects from "./components/CarnivalEffects";
+
+
 
 import "./App.css";
+import CurrencyTicker from "./components/CurrencyTicker";
+
+
 
 function App() {
   return (
     <Router>
-      <Nieve />
       <Header />
-
+      <CurrencyTicker/>
+    
+    
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <BannerNavidad />
+              
               <Home />
+              
               <MasNoticias />
             </>
           }
         />
+        <Route path="/entretenimiento" element={<Entretenimiento />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
-      <BannerNavidad />
+      
       <Footer />
     </Router>
   );

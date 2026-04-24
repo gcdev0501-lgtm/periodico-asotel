@@ -14,7 +14,7 @@ export default function Recomendados() {
 
         <li>
           <a
-            href="//www.rojadirectaenvivo.pl/home4.php"
+            href=""
             target="_blank"
             rel="noreferrer"
           >

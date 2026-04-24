@@ -12,7 +12,9 @@ export default function Home() {
     <>
       <main className="main-content">
          <section className="main-article">
+          
           <Noticias />
+          
           <Slider />
          </section>
 

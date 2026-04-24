@@ -2,9 +2,10 @@
 
 .header {
   border-bottom: 2px solid #a9e098;
+  
 }
 
-/* 🎄 Banner de Navidad arriba del Header */
+/* 🎄 Banner de Navidad arriba del Header 
 .banner-navidad-top {
   width: 100%;
   text-align: center;
@@ -22,7 +23,7 @@
 
   animation: flotarNavidad 3s ease-in-out infinite alternate;
   filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.64));
-}
+} */  
 
 @keyframes flotarNavidad {
   0% {
@@ -60,6 +61,8 @@
   border: 1px solid #ccc;
   border-radius: 25px;
 }
+
+
 
 /* ================= LOGO ================= */
 
@@ -99,6 +102,12 @@
 .logo-image {
   height: 70px;
   width: auto;
+}
+
+.logoCarnaval {
+  height: 70px;
+  animation: flotarNavidad 1s ease-in-out infinite alternate;
+
 }
 
 /* Subtítulo */

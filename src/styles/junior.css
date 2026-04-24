@@ -10,17 +10,61 @@
     width: auto;
     max-width:350px ; /* mantiene maximo de tamaño en reponsive*/
     height: auto; 
+    max-height: 300px;
     object-fit: cover; /* mantiene el reponsive */
     margin-top: 10px;
     margin-bottom:5px;
     border-radius: 5px;
 }
 
+.entretenimiento-preview {
+  background: #f2f2f2;
+  border-left: 4px solid #c00000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-link {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.preview-link img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.preview-texto h3 {
+  color: #c00000;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.preview-texto p {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.leer-mas {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #c00000;
+}
+
+
+
 .img-victoria {
   width: 100%;
   border-radius: 6px;
   margin: 10px 0;
 }
+
 
 .proxima-fecha {
   background: #f3f3f3;
@@ -30,13 +74,38 @@
 }
 
 .instagram-link {
- display: block;
+  display: block;
   margin-top: 20px;
   padding: 10px;
-  background-color: #ca1313;
+  background-color: #ff9100;
   color: #fff;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+}
+a:hover {
+  color: #038a19fb;
+}
+
+
+
+
+@media (min-width: 769px) {
+  .preview-link {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .preview-link img {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .preview-texto {
+    grid-column: 1 / 4;
+    margin-top: 0.5rem;
+  }
 }

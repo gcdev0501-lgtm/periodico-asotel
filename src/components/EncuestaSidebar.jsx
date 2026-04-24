@@ -1,75 +1,109 @@
 import React, { useState } from "react";
 import { db } from "../firebaseConfig/firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import Swal from "sweetalert2";
 
-import '../styles/encuestasidebar.css';
+import { FaUserCheck } from "react-icons/fa6";
+import "../styles/encuestasidebar.css";
+
+// 🔧 Función para normalizar nombre + apellido
+const normalizarNombre = (texto) => {
+  return texto
+    .toLowerCase()
+    .normalize("NFD")                // elimina tildes
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "-")            // espacios → guiones
+    .trim();
+};
 
 export default function EncuestaSidebar() {
-
+  const [nombreCompleto, setNombreCompleto] = useState("");
   const [respuesta, setRespuesta] = useState("");
-
-  // Colección Firebase
-  const encuestaCollection = collection(db, "encuesta");
+  const [enviando, setEnviando] = useState(false);
 
   const enviarRespuesta = async (e) => {
     e.preventDefault();
 
-    if (!respuesta) {
-      Swal.fire("Error", "Selecciona una opción antes de enviar", "warning");
+    if (!nombreCompleto || !respuesta) {
+      Swal.fire(
+        "Datos incompletos",
+        "Ingresa tu nombre y selecciona una opción",
+        "warning"
+      );
       return;
     }
 
+    const personaId = normalizarNombre(nombreCompleto);
+
+    setEnviando(true);
+
     try {
-      await addDoc(encuestaCollection, {
-        fld_respuesta: respuesta,
-        fecha: new Date()
+      await setDoc(doc(db, "encuesta", personaId), {
+        personaId,
+        nombreCompleto: nombreCompleto.trim(),
+        respuesta,
+        fecha: serverTimestamp()
       });
 
-      Swal.fire("Gracias por participar", "", "success");
-      setRespuesta(""); // Limpiar selección
+      Swal.fire("¡Gracias por participar!", "", "success");
+
+      setNombreCompleto("");
+      setRespuesta("");
     } catch (error) {
-      Swal.fire("Error", "No se pudo enviar tu respuesta", "error");
       console.error(error);
+      Swal.fire(
+        "Voto ya registrado",
+        "Esta persona ya participó en la encuesta",
+        "info"
+      );
+    } finally {
+      setEnviando(false);
     }
   };
 
   return (
     <div className="encuesta-sidebar">
-      <h3>Encuesta rápida</h3>
+      <h3>
+        <FaUserCheck /> Encuesta rápida
+      </h3>
+
       <form onSubmit={enviarRespuesta}>
-        <p>¿Cómo calificarías nuestro servicio?</p>
+        <p>¿Qué tipo de evento te gustaría para nuestro próximo encuentro?</p>
+
+        <input
+          className="box-correo"
+          type="text"
+          placeholder="Nombre y apellido"
+          value={nombreCompleto}
+          onChange={(e) => setNombreCompleto(e.target.value)}
+          required
+        />
+
         <label>
           <input
             type="radio"
             name="opcion"
-            value="Excelente"
-            checked={respuesta === "Excelente"}
+            value="Rumba"
+            checked={respuesta === "Rumba"}
             onChange={(e) => setRespuesta(e.target.value)}
           />
-          Excelente
+          Rumba
         </label>
+
         <label>
           <input
             type="radio"
             name="opcion"
-            value="Bueno"
-            checked={respuesta === "Bueno"}
+            value="Paseo"
+            checked={respuesta === "Paseo"}
             onChange={(e) => setRespuesta(e.target.value)}
           />
-          Bueno
+          Paseo
         </label>
-        <label>
-          <input
-            type="radio"
-            name="opcion"
-            value="Regular"
-            checked={respuesta === "Regular"}
-            onChange={(e) => setRespuesta(e.target.value)}
-          />
-          Regular
-        </label>
-        <button type="submit">Enviar</button>
+
+        <button type="submit" disabled={enviando}>
+          {enviando ? "Enviando..." : "Enviar"}
+        </button>
       </form>
     </div>
   );

@@ -1,15 +1,31 @@
 .contacto {
-color: black;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centra horizontalmente */
+  padding: 20px;
   background-color: #f9f9f9;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* Formulario */
+.contacto form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px;
-  margin: 20px auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+  /* Evita que el formulario se estire demasiado */
+  flex-shrink: 0;
 }
 
 .contacto h2{
+  font-size: 2.5rem;
     text-align: center;
+    
 }
 
 .contacto h3 {

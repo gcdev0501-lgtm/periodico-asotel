@@ -14,9 +14,11 @@ import imgMarcha from '../assets/img-marcha-1mayo.jpg';
 import imgReunion from '../assets/img-reunion-socios.jpg';
 import imgSolidaridad from '../assets/img-solidaridad-asotel.jpg';
 import imgEquipo  from '../assets/img-equipo-asotel.jpg';
-import imgColpensiones from '../assets/imagescolpensiones.jpeg';
+import imgFibraOptica from '../assets/img-fibra-optica.png';
 import imgIntegracion from '../assets/img-integracion-socios.jpg';
 
+
+import { FaMask } from "react-icons/fa";
 
 
 
@@ -74,10 +76,10 @@ const noticiasGrid = [
   },
   {
     id: "noticia5",
-    img: imgColpensiones,
-    titulo: "Actualización sobre pensiones",
+    img: imgFibraOptica,
+    titulo: "Infraestructura digital: El salto de la fibra óptica ",
     texto:
-      "Decisiones importantes para el nuevo período. El presidente Gustavo Petro ratificó su compromiso con la protección de los fondos de pensiones y anunció la implementación de nuevos mecanismos de control y transparencia dentro del sistema pensional colombiano. Estas medidas buscan garantizar la seguridad financiera de los trabajadores y asegurar que los recursos destinados a su jubilación sean administrados de manera responsable y equitativa. “Nuestro objetivo no es desmantelar lo construido, sino corregir las inequidades que durante años han afectado a los trabajadores de menores ingresos.",
+      "Lo último en fibra óptica se enfoca en fibras huecas (Air-Core) para latencia ultrabaja y mayor potencia, tecnologías como Ribbon para empalmes más rápidos y económicos, y avances en multinúcleo para multiplicar la capacidad, todo para habilitar la demanda futura de Internet cuántico, IA y realidad extendida, mejorando velocidad, estabilidad y eficiencia energética en redes, como se ve en récords de transmisión y nuevos materiales. Innovaciones Clave Fibras Huecas (Air-Core Fibers): Reemplazan parte del vidrio por aire, reduciendo la distorsión y la latencia drásticamente, prometiendo un internet 1000 veces más potente para el futuro cuántico y IA. Fibras Multicore: Permiten transmitir múltiples señales por un solo hilo, aumentando masivamente la capacidad sin aumentar el grosor del cable, con avances en récords de capacidad y distancia. Tecnología Ribbon: Agrupa hilos de fibra en cintas, permitiendo fusionar 12 hilos a la vez, lo que acelera la instalación, reduce costos y facilita la recuperación de servicios. Materiales y Fabricación Avanzados: Se usan preformas con canales huecos integrados y técnicas de estiramiento precisas para fabricar estas fibras de alta capacidad a escala industrial, incluyendo diseños más resistentes y delgados. Aplicaciones y Beneficios Futuros Robótica e Industria 4.0: Control de calidad, automatización y realidad aumentada en entornos industriales. Computación Cuántica: Las nuevas fibras son esenciales para la infraestructura de la futura internet cuántica. Entretenimiento y Gaming: Experiencias de streaming y juegos en la nube más fluidas con menor latencia. Eficiencia y Sostenibilidad: Menor consumo energético y vida útil más larga (25+ años) comparada con el cobre. Tendencias y Desafíos Escalabilidad: Adaptar estas tecnologías para redes masivas y superar los límites actuales de capacidad. Integración Industrial: Empresas como Microsoft apuestan por la producción de fibras huecas, indicando su rápida adopción.",
   },
   {
     id: "noticia6",
@@ -94,6 +96,8 @@ export default function NoticiasGrid({ onSelect }) {
 
   
   return (
+
+    
     <section className="articulos">
 
       {/* 🔥 ARTÍCULO DESTACADO */}
@@ -109,7 +113,7 @@ export default function NoticiasGrid({ onSelect }) {
         <div className="contenido-preview">
         <p>{noticiaEspecial.texto}</p>
         </div>
-        <button className="ver-mas">Ver más</button>
+        <button className="btn-carnaval">Ver más</button>
       </article>
 
     {/* 🧱 NOTICIAS NORMALES (las 6 que ya tenías) */}
@@ -122,7 +126,9 @@ export default function NoticiasGrid({ onSelect }) {
           <img src={n.img} alt={n.titulo} />
           <h2>{n.titulo}</h2>
           <p>{n.texto.length > 60 ? n.texto.slice(0, 60) + "..." : n.texto}</p>
-          <button className="ver-mas">Ver más</button>
+          <button className="btn-carnaval">
+             Ver Mas
+          </button>
         </article>
       ))}
     </section>

@@ -6,6 +6,9 @@ import logoAsotel from "../assets/ImgLOGOAsotel_final3.jpg";
 import banderaAsotel from "../assets/bandera_Asotel1.png";
 
 
+
+
+
 export default function Header() {
    const navigate = useNavigate(); // <-- HOOK PARA NAVEGACIÓN
   useEffect(() => {
@@ -50,9 +53,11 @@ export default function Header() {
     onClick={() => navigate("/")}
     style={{ cursor: "pointer" }}
   >
+    <img className="logoCarnaval" />
     <img src={logoAsotel} alt="Logo ASOTEL" className="logo-final" />
     <h1>ASOTEL</h1>
     <img src={banderaAsotel} alt="Bandera ASOTEL" className="logo-image" />
+    <img className="logoCarnaval" /> 
   </div>
 
   {/* Esto no se toca, no forma parte del clic */}
@@ -70,8 +75,8 @@ export default function Header() {
           <li><a href="#">Judicial</a></li>
           <li><a href="#">Mundo</a></li>
           <li><a href="#">Deportes</a></li>
-          <li><a href="#">Entretenimiento</a></li>
-           <li><Link to="/contacto">Contacto</Link></li>
+          <li><Link to="/entretenimiento">Entretenimiento</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>
     </header>

@@ -28,6 +28,11 @@ margin-bottom:0px;
     border-radius: 5px;
 }
 
+.btn-editorial {
+    color: aliceblue;
+    background-color: #c00000;
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
     .img_editorial {
