@@ -9,18 +9,12 @@ import imgFiesta8 from '../assets/imgFiesta8.jpeg';
 import imgFiesta9 from '../assets/imgFiesta9.jpeg';
 
 
-
-import imgMarcha from '../assets/img-marcha-1mayo.jpg';
+import imgMarcha from '../assets/img-mujeresAsotel.jpeg';
 import imgReunion from '../assets/img-reunion-socios.jpg';
 import imgSolidaridad from '../assets/img-solidaridad-asotel.jpg';
 import imgEquipo  from '../assets/img-equipo-asotel.jpg';
 import imgFibraOptica from '../assets/img-fibra-optica.png';
 import imgIntegracion from '../assets/img-integracion-socios.jpg';
-
-
-import { FaMask } from "react-icons/fa";
-
-
 
 
 import "../styles/noticiasgrid.css";
@@ -42,15 +36,15 @@ const noticiaEspecial = {
     imgFiesta8,
     imgFiesta9,
   ],
-};
+}; 
 
 const noticiasGrid = [
   {
     id: "noticia1",
     img: imgMarcha,
-    titulo: "Participación de Asotel el primero de mayo",
+    titulo: "Participación de Asotel en la marcha del primero de mayo",
     texto:
-      "Organizaciones sociales acompañaron la jornada convocada por el presidente.En el marco de la conmemoración del Día Internacional del Trabajo, Asotel tuvo una destacada participación en la jornada del primero de mayo, un evento que reunió a diversas organizaciones sociales, sindicales y comunitarias. La presencia de la asociación se sumó al amplio respaldo ciudadano al llamado realizado por el presidente, en defensa de los derechos laborales, la dignificación del empleo y el fortalecimiento de las garantías para los trabajadores del país. La jornada transcurrió en un ambiente de unidad, reflexión y compromiso colectivo, donde la voz de los diferentes sectores sirvió para resaltar la importancia del diálogo social y la construcción conjunta de un país más justo e inclusivo."
+      "Organizaciones sociales acompañaron la jornada convocada por nuestro presidente en el marco de la conmemoración del Dia Internacional del Trabajo. Asotel tuvo una destacada participación de esta gran marcha del primero de mayo, sus asociados con sus respectivos acompañantes, caminaron gritando las consignas de cambios y reforma que se necesitan. Asotel marcho al lado de diversas organizaciones sociales y sindicales. La presencia de la asociación se sumo al amplio respaldo ciudadano y al llamado de nuestro presidente. La jornada transcurrio en un ambiente de unidad, reflexión y compromiso colectivo, donde la voz de los diferentes sectores sirvió para resaltar la importancia del dialogo social y la construcción conjunta de un país mas justo e inclusivo."
       
   },
   {

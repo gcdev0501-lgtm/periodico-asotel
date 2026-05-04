@@ -6,13 +6,45 @@ import imgIncabot from '../assets/noticias.link_c2.webp';
 import imgIncabot2 from '../assets/noticias_link_c5.webp';
 import imgLink4 from '../assets/noticias_link_c.jpeg';
 import imgLink4_2 from '../assets/noticias_link_c1.webp';
+import imgAsotel2 from '../assets/ASOTEL_page-0001.jpg';
+import imgAsotel3 from '../assets/ASOTEL_page-0002.jpg';
 
 
 
 import "../styles/noticiaslinks.css";
 
 const noticiasLinks = [
+ 
   {
+    id: "noticiaC",
+    img: imgIncabot,
+    imagenes: [imgIncabot2],
+    titulo:
+      "De Chicago al mundo: el origen del 1 de mayo y la lucha por la jornada de ocho horas. ",
+      texto:"El 1 de mayo, conocido como el Día Internacional de los Trabajadores, tiene sus raíces en la histórica lucha obrera por condiciones laborales dignas. Su origen se remonta a 1886, en la ciudad de Chicago, donde miles de trabajadores se movilizaron para exigir la jornada laboral de ocho horas bajo el lema: “ocho horas de trabajo, ocho de descanso y ocho de ocio”. Durante estas protestas ocurrió el trágico Motín de Haymarket, que derivó en una fuerte represión y en la ejecución de varios líderes obreros, posteriormente reconocidos como mártires del movimiento laboral. Este hecho marcó un antes y un después en la historia de las luchas sociales.En 1889, la Segunda Internacional proclamó el 1 de mayo como una jornada de conmemoración y reivindicación a nivel mundial. ",
+      textoExtra: " Desde entonces, esta fecha se ha convertido en un símbolo de la lucha por los derechos laborales, la justicia social y la dignidad del trabajador.Desde la perspectiva de la izquierda, el 1 de mayo representa la resistencia frente a la explotación y la desigualdad, así como la conquista de derechos fundamentales como la jornada laboral de ocho horas, la sindicalización y la seguridad social. Más que una celebración, es un recordatorio de que los avances laborales han sido fruto de la organización y la lucha colectiva.  ",
+      
+      hora: "12:02 PM",
+  },
+  {
+    id: "noticiaD",
+    img: imgLink4,
+    imagenes: [imgLink4_2],
+    titulo:
+      "1 de mayo en Colombia: historia y significado del Día del Trabajador.",
+      texto: "El 1 de mayo en Colombia es una fecha que refleja la historia y evolución de las luchas laborales en el país. Su conmemoración comenzó a inicios del siglo XX, con las primeras manifestaciones organizadas hacia 1914 en ciudades como Bogotá, Medellín y Barranquilla, donde trabajadores y artesanos exigían mejores condiciones laborales. A lo largo de las décadas de 1920 y 1930, el movimiento obrero tomó fuerza, impulsando la creación de sindicatos y el desarrollo de huelgas en sectores clave de la economía. Uno de los episodios más significativos fue la Masacre de las Bananeras, ocurrida en 1928 en la zona de Santa Marta, donde una protesta de trabajadores fue reprimida violentamente, marcando un hito en la historia social del país. Con el paso del tiempo, estas luchas dieron lugar al reconocimiento de derechos laborales fundamentales, como la regulación de la jornada de trabajo y el derecho a la huelga. Hoy, el 1 de mayo es un día festivo y de movilización en Colombia, en el que trabajadores y organizaciones sociales conmemoran sus conquistas y continúan exigiendo mejores condiciones de vida",
+    hora: "12:01 PM",
+  },
+  {
+    id: "noticiaE",
+    
+    imagenes: [imgAsotel2,imgAsotel3],
+    titulo:
+      "Estado Financiero de ASOTEL.",
+     
+    hora: "12:01 PM",
+  },
+   {
     id: "noticiaA",
     img: imgSoberania,
     titulo:
@@ -60,26 +92,6 @@ const noticiasLinks = [
     titulo:
       "Presidente Petro decreta incremento histórico del salario mínimo para 2026.",
       texto:"El presidente de Colombia, Gustavo Petro, anunció oficialmente en alocución presidencial el aumento del Salario Mínimo Mensual Legal Vigente (SMMLV) para 2026, tras el fracaso de las negociaciones en la mesa de concertación salarial. El ajuste será del 22,7%, elevando el salario base de $1.420.000 a $1.750.905, y con el auxilio de transporte incluido, el ingreso mensual total alcanzará los $2.000.000, lo que representa un incremento global del 23,78%. Esta decisión marca el mayor salto nominal en el salario mínimo en Colombia desde 1997, cuando el aumento fue del 21,02%. En términos reales —descontada la inflación—, el gobierno afirma que el incremento será del 18,7%, superando lo logrado en los tres años anteriores sumados. “En el último año elevamos el salario real más que en la sumatoria de los tres años previos”, afirmó el mandatario. El presidente presentó esta medida como un paso concreto hacia la implementación del “salario mínimo vital”, una figura que, según explicó, busca garantizar condiciones de vida dignas no solo al trabajador, sino a su núcleo familiar. “El salario mínimo vital no es individual, sino familiar”, aclaró Petro, al recordar que los hogares colombianos tienen en promedio 3,4 personas y 1,5 trabajadores por familia. Basado en una canasta familiar estimada en poco más de $3 millones mensuales, el gobierno determinó que el ingreso mínimo necesario por hogar justifica el nuevo nivel salarial. ",
-    hora: "12:01 PM",
-  },
-  {
-    id: "noticiaC",
-    img: imgIncabot,
-    imagenes: [imgIncabot2],
-    titulo:
-      "De Chicago al mundo: el origen del 1 de mayo y la lucha por la jornada de ocho horas. ",
-      texto:"El 1 de mayo, conocido como el Día Internacional de los Trabajadores, tiene sus raíces en la histórica lucha obrera por condiciones laborales dignas. Su origen se remonta a 1886, en la ciudad de Chicago, donde miles de trabajadores se movilizaron para exigir la jornada laboral de ocho horas bajo el lema: “ocho horas de trabajo, ocho de descanso y ocho de ocio”. Durante estas protestas ocurrió el trágico Motín de Haymarket, que derivó en una fuerte represión y en la ejecución de varios líderes obreros, posteriormente reconocidos como mártires del movimiento laboral. Este hecho marcó un antes y un después en la historia de las luchas sociales.En 1889, la Segunda Internacional proclamó el 1 de mayo como una jornada de conmemoración y reivindicación a nivel mundial. ",
-      textoExtra: " Desde entonces, esta fecha se ha convertido en un símbolo de la lucha por los derechos laborales, la justicia social y la dignidad del trabajador.Desde la perspectiva de la izquierda, el 1 de mayo representa la resistencia frente a la explotación y la desigualdad, así como la conquista de derechos fundamentales como la jornada laboral de ocho horas, la sindicalización y la seguridad social. Más que una celebración, es un recordatorio de que los avances laborales han sido fruto de la organización y la lucha colectiva.  ",
-      
-      hora: "12:02 PM",
-  },
-  {
-    id: "noticiaD",
-    img: imgLink4,
-    imagenes: [imgLink4_2],
-    titulo:
-      "1 de mayo en Colombia: historia y significado del Día del Trabajador",
-      texto: "El 1 de mayo en Colombia es una fecha que refleja la historia y evolución de las luchas laborales en el país. Su conmemoración comenzó a inicios del siglo XX, con las primeras manifestaciones organizadas hacia 1914 en ciudades como Bogotá, Medellín y Barranquilla, donde trabajadores y artesanos exigían mejores condiciones laborales. A lo largo de las décadas de 1920 y 1930, el movimiento obrero tomó fuerza, impulsando la creación de sindicatos y el desarrollo de huelgas en sectores clave de la economía. Uno de los episodios más significativos fue la Masacre de las Bananeras, ocurrida en 1928 en la zona de Santa Marta, donde una protesta de trabajadores fue reprimida violentamente, marcando un hito en la historia social del país. Con el paso del tiempo, estas luchas dieron lugar al reconocimiento de derechos laborales fundamentales, como la regulación de la jornada de trabajo y el derecho a la huelga. Hoy, el 1 de mayo es un día festivo y de movilización en Colombia, en el que trabajadores y organizaciones sociales conmemoran sus conquistas y continúan exigiendo mejores condiciones de vida",
     hora: "12:01 PM",
   },
 ];

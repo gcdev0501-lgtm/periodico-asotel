@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PrimiciaMarcha from "./PrimiciaMarcha";
 import NoticiasLinks from "./NoticiasLinks";
 import NoticiaPrincipal from "./NoticiaPrincipal";
 import NoticiasGrid from "./NoticiasGrid";
@@ -10,6 +11,7 @@ export default function Noticias() {
 
   return (
     <section className="noticias">
+      <PrimiciaMarcha />
       <NoticiasLinks onSelect={setNoticiaActiva} />
 
       {!noticiaActiva && <NoticiaPrincipal />}
